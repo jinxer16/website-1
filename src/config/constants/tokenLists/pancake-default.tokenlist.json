@@ -1,0 +1,47 @@
+{
+  "name": "PancakeSwap Default List",
+  "timestamp": "2021-05-06T00:00:00Z",
+  "version": {
+    "major": 3,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "https://pancakeswap.finance/logo.png",
+  "keywords": ["pancake", "default"],
+  "tokens": [
+    {
+      "name": "WADA",
+      "symbol": "WADA",
+      "address": "0x65a51E52eCD17B641f8F0D1d56a6c9738951FDC9",
+      "chainId": 200101,
+      "decimals": 18,
+      "logoURI": "http://bashprotocol.com/images/tokens/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png"
+    },
+    {
+      "name": "USDC Token",
+      "symbol": "USDC",
+      "address": "0xC12F6Ee5c853393105f29EF0310e61e6B494a70F",
+      "chainId": 200101,
+      "decimals": 18,
+      "logoURI": "https://pancakeswap.finance/images/tokens/0xe9e7cea3dedca5984780bafc599bd69add087d200101.png"
+    },
+    {
+      "name": "DAI Token",
+      "symbol": "DAI",
+      "address": "0xf8B13C34A1c8b8a3207e55d00bc947212949C6AC",
+      "chainId": 200101,
+      "decimals": 18,
+      "logoURI": "https://pancakeswap.finance/images/tokens/0xe9e7cea3dedca5984780bafc599bd69add087d200101.png"
+    },
+    {
+      "name": "Papple Token",
+      "symbol": "PAPPLE",
+      "address": "0x15cA3A5D8635D2Dd48aaFA0B45E585eA559a8396",
+      "chainId": 200101,
+      "decimals": 18,
+      "logoURI": "http://localhost:3000/#/images/tokens/0x17e82d8004590A927204A0729f1AA010Fa889989.png"
+    }
+
+  ]
+}

@@ -112,14 +112,6 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, displayApr, removed, cakePric
               <Skeleton height={24} width={80} />
           )}
         </Flex> */}
-        <Flex justifyContent="space-between">
-          <Text>{t('Withdraw Fee')}:</Text>
-          {farm.withdrawFee ? (
-              <Text bold>{farm.withdrawFee}</Text>
-            ) : (
-              <Skeleton height={24} width={80} />
-          )}
-        </Flex>
         <CardActionsContainer
           farm={farm}
           lpLabel={lpLabel}

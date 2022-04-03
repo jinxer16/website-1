@@ -38,14 +38,6 @@ const PoolCard: React.FC<{ pool: Pool; account: string }> = ({ pool, account }) 
               <Skeleton height={24} width={82} />
           )}
         </Flex> */}
-        <Flex justifyContent="space-between">
-          <Text>{t('Withdraw Fee')}:</Text>
-          {pool.withdrawFee ? (
-              <Text bold>{pool.withdrawFee}</Text>
-            ) : (
-              <Skeleton height={24} width={82} />
-          )}
-        </Flex>
         <Flex mt="24px" flexDirection="column">
           {account ? (
             <CardActions pool={pool} stakedBalance={stakedBalance} />

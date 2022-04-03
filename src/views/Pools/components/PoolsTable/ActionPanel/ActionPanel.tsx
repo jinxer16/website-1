@@ -258,14 +258,6 @@ const ActionPanel: React.FC<ActionPanelProps> = ({ account, pool, userDataLoaded
               <Skeleton height={24} width={80} />
           )}
         </Flex> */}
-        <Flex mb="8px" justifyContent="space-between">
-          <Text>{t('Withdraw Fee')}:</Text>
-          {pool.withdrawFee ? (
-              <Text bold>{pool.withdrawFee}</Text>
-            ) : (
-              <Skeleton height={24} width={80} />
-          )}
-        </Flex>
         <Flex mb="8px" justifyContent={['flex-end', 'flex-end', 'flex-start']}>
           <LinkExternal href={`https://pancakeswap.info/token/${getAddress(earningToken.address)}`} bold={false}>
             {t('See Token Info')}

@@ -24,7 +24,7 @@ const StakingPairCard = () => {
         <Flex >
           <img style={{"paddingRight":"10px", "height":"55px"}} src="/images/new/img4.png" alt="1"/>
           <img style={{"paddingRight":"10px", "height":"55px"}} src="/images/new/img6.png" alt="2"/>
-          <img style={{"paddingRight":"10px", "height":"55px"}} src="/images/new/chronic_yield.png" alt="3"/>
+          <img style={{"paddingRight":"10px", "height":"55px"}} src="/images/new/pine.png" alt="3"/>
         </Flex>
       </CardBody>
     </StyledFarmStakingCard>

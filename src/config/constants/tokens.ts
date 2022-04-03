@@ -100,8 +100,8 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://pancakeswap.finance/',
   },
-  papple:{
-    symbol: 'PAPPLE',
+  pine:{
+    symbol: 'PINE',
     address: {
       56: '0x17e82d8004590A927204A0729f1AA010Fa889989', /* 0x504BA9B11c727688cCca62BAE112C2c62085129E */
       200101: '0x15cA3A5D8635D2Dd48aaFA0B45E585eA559a8396'

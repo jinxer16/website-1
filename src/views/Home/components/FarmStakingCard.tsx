@@ -59,11 +59,11 @@ const FarmedStakingCard = () => {
         </Heading>
         <CardImage src="/images/new/logo.png" alt="chy logo" width={64} height={64} />
         <Block>
-          <Label>{t('PAPPLE to Harvest')}:</Label>
+          <Label>{t('PINE to Harvest')}:</Label>
           <CakeHarvestBalance />
         </Block>
         <Block>
-          <Label>{t('PAPPLE in Wallet')}:</Label>
+          <Label>{t('PINE in Wallet')}:</Label>
           <CakeWalletBalance />
         </Block>
       </CardBody>

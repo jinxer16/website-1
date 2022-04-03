@@ -110,7 +110,7 @@ const ContributeModal: React.FC<Props> = ({
           <Flex flexGrow={1} justifyContent="flex-end">
             <TokenPairImage
             variant="inverted"
-            primaryToken={tokens.papple}
+            primaryToken={tokens.pine}
             height={32}
             width={32}
             secondaryToken={tokens.wbnb}

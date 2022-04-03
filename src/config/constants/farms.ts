@@ -4,23 +4,23 @@ import { FarmConfig } from './types'
 const farms: FarmConfig[] = [
   {
     pid: 0,
-    lpSymbol: 'PAPPLE',
+    lpSymbol: 'PINE',
     isTokenOnly: true,
     lpAddresses: {
       200101: '0x0ADC86ee9bE178F490833b6A904D2A731662C4bf',
       56: '0x3fba787e48a1f4c2a1ec04702aa3fe2162704e67', /* 0x3e76bd1edb5f6d981dd14d9d2ab711f0c2a0a6a0 */
     },
-    token: tokens.papple,
+    token: tokens.pine,
     quoteToken: tokens.busd,
   },
   {
     pid: 1,
-    lpSymbol: 'PAPPLE-ADA LP',
+    lpSymbol: 'PINE-ADA LP',
     lpAddresses: {
       200101: '0x48f00ec3ec5ad370de07480879ae5d3ab7fa3ebf',
       56: '',
     },
-    token: tokens.papple,
+    token: tokens.pine,
     quoteToken: tokens.wbnb,
   },
   {
@@ -35,12 +35,12 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 3,
-    lpSymbol: 'PAPPLE-DAI LP',
+    lpSymbol: 'PINE-DAI LP',
     lpAddresses: {
       200101: '0x0ADC86ee9bE178F490833b6A904D2A731662C4bf',
       56: '',
     },
-    token: tokens.papple,
+    token: tokens.pine,
     quoteToken: tokens.busd,
   },
   {

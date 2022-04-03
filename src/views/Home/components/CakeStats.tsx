@@ -32,18 +32,18 @@ const CakeStats = () => {
     <StyledCakeStats>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {t('PAPPLE Stats')}
+          {t('PINE Stats')}
         </Heading>
         <Row>
           <Text fontSize="14px">{t('Total Token Supply')}</Text>
           {cakeSupply && <CardValue color="#e23816 "  fontSize="14px" value={cakeSupply} />}
         </Row>
         <Row>
-          <Text fontSize="14px">{t('Total PAPPLE Burned')}</Text>
+          <Text fontSize="14px">{t('Total PINE Burned')}</Text>
           <CardValue color="#e23816 "  fontSize="14px" decimals={0} value={burnedBalance} />
         </Row>
         <Row>
-          <Text fontSize="14px">{t('PAPPLE Price')}</Text>
+          <Text fontSize="14px">{t('PINE Price')}</Text>
           <CardValue color="#e23816 "  fontSize="14px" decimals={6} value={chyPriceBusd.toNumber()} />
         </Row>
         <Row>

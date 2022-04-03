@@ -390,7 +390,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
     <>
       <PageHeader>
         <Heading as="h1" scale="xxl" color="orange" mb="24px">
-          {tokenMode ? <img src="/images/new/logo.png" alt="Pools" style={{"paddingRight":"10px", "height":"40px"}}/> : <img src="/images/new/icon3.png" alt="Farms" style={{"paddingRight":"10px", "height":"50px"}}/>}
+          {tokenMode ? <img src="/images/new/logo.png" alt="Pools" style={{"paddingRight":"10px", "height":"40px"}}/> : <img src="/images/new/icon3.png" alt="Farms" style={{"paddingRight":"10px", "height":"25px", "width":"25px"}}/>}
           {tokenMode ? t('Pools') : t('Farms')}
         </Heading>
         <Heading scale="lg" color="text">

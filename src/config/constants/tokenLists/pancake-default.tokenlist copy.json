@@ -13,10 +13,10 @@
     {
       "name": "WADA Token",
       "symbol": "WADA",
-      "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "address": "0x152E2D46798f2827d46F2DAd098bf7Cd8B985538",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "http://bashprotocol.com/images/tokens/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png"
+      "logoURI": "http://bashprotocol.com/images/tokens/0x152E2D46798f2827d46F2DAd098bf7Cd8B985538.png"
     },
     {
       "name": "Chronic Yield",

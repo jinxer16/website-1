@@ -49,7 +49,7 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpAddresses: {
       200101: '0xa021a60250a7d5af3941542927a154bafdde2393',
-      56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', /* 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c */
+      56: '0x152E2D46798f2827d46F2DAd098bf7Cd8B985538', /* 0x152E2D46798f2827d46F2DAd098bf7Cd8B985538 */
     },
     token: tokens.wbnb,
     quoteToken: tokens.busd,

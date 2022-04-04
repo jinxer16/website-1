@@ -51,7 +51,7 @@ export const BUSD: { [chainId: number]: Token } = {
   ),
 }
 
-export const WADA = new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WADA', 'Wrapped ADA')
+export const WADA = new Token(ChainId.MAINNET, '0x152E2D46798f2827d46F2DAd098bf7Cd8B985538', 18, 'WADA', 'Wrapped ADA')
 export const DAI = new Token(ChainId.MAINNET, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'Dai Stablecoin')
 export const USDT = new Token(ChainId.MAINNET, '0x55d398326f99059fF775485246999027B3197955', 18, 'USDT', 'Tether USD')
 export const BTCB = new Token(ChainId.MAINNET, '0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c', 18, 'BTCB', 'Binance BTC')
@@ -760,7 +760,7 @@ const tokens = {
   wbnb: {
     symbol: 'wADA',
     address: {
-      56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+      56: '0x152E2D46798f2827d46F2DAd098bf7Cd8B985538',
       200101: '0x65a51E52eCD17B641f8F0D1d56a6c9738951FDC9',
     },
     decimals: 18,

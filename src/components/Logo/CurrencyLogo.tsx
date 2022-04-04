@@ -24,7 +24,7 @@ export default function CurrencyLogo({
   const uriLocations = useHttpLocations(currency instanceof WrappedTokenInfo ? currency.logoURI : undefined)
 
   const srcs: string[] = useMemo(() => {
-    if (currency === ETHER) return []
+    if (currency === ETHER) return [getTokenLogoURL(currency.address)]
 
     if (currency instanceof Token) {
       if (currency instanceof WrappedTokenInfo) {
@@ -36,7 +36,7 @@ export default function CurrencyLogo({
   }, [currency, uriLocations])
 
   if (currency === ETHER) {
-    return <BinanceIcon width={size} style={style} />
+    return <StyledLogo srcs={['/images/tokens/ada.png']} size={size} style={style} alt="Token Logo"/>
   }
 
   // if (currency?.symbol === 'CHY') {

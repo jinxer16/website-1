@@ -87,7 +87,7 @@ const Home: React.FC = () => {
   return (
     <Page>
       <Hero>
-        <Heading as="h1" size="xl" mb="64px" color="#009cff" style={{fontSize: "48px"}}>
+        <Heading as="h1" size="xl" mb="64px" color="#0069ab" style={{fontSize: "48px"}}>
           {t('Pineapple Finance')}
         </Heading>
       </Hero>

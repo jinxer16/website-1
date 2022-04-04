@@ -86,7 +86,7 @@ const PoolAllocationChart: React.FC<SvgProps> = (props) => {
           rx="200.5"
           ry="199.5"
           transform="rotate(-90 201.5 202.5)"
-          stroke="#280D5F"
+          stroke="#0069ab"
           strokeWidth="3"
         />
       </svg>

@@ -7,7 +7,7 @@ import { WrappedTokenInfo } from '../../state/lists/hooks'
 import getTokenLogoURL from '../../utils/getTokenLogoURL'
 import Logo from './Logo'
 
-let ada = 0x3ee2200efb3400fabb9aacf31297cbdd1d435d47;
+const ada = "0x3ee2200efb3400fabb9aacf31297cbdd1d435d47";
 
 const StyledLogo = styled(Logo)<{ size: string }>`
   width: ${({ size }) => size};

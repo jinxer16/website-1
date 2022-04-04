@@ -31,12 +31,12 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     href: '/farms',
     // status: menuStatus.SOON
   },
-  {
-    label: t('Pools'),
-    icon: 'PoolIcon',
-    href: '/pools',
-    // status: menuStatus.SOON
-  },
+  // {
+  //   label: t('Pools'),
+  //   icon: 'PoolIcon',
+  //   href: '/pools',
+  //   // status: menuStatus.SOON
+  // },
   // {
   //   label: t('Juicy (soon)'),
   //   icon: 'PredictionsIcon',

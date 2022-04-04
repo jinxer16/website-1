@@ -7,7 +7,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'PINE',
     isTokenOnly: true,
     lpAddresses: {
-      200101: '0x0ADC86ee9bE178F490833b6A904D2A731662C4bf',
+      200101: '0x9F6D4aAbAfDcf7d3a63BC61b2d7be9E3EED6e916',
       56: '0x3fba787e48a1f4c2a1ec04702aa3fe2162704e67', /* 0x3e76bd1edb5f6d981dd14d9d2ab711f0c2a0a6a0 */
     },
     token: tokens.pine,

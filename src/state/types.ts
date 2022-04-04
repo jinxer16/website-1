@@ -226,8 +226,8 @@ export interface Bet {
   claimedAt: number
   claimedBlock: number
   claimedHash: string
-  claimedBNB: number
-  claimedNetBNB: number
+  claimedADA: number
+  claimedNetADA: number
   createdAt: number
   updatedAt: number
   user?: PredictionUser
@@ -242,14 +242,14 @@ export interface PredictionUser {
   totalBets: number
   totalBetsBull: number
   totalBetsBear: number
-  totalBNB: number
-  totalBNBBull: number
-  totalBNBBear: number
+  totalADA: number
+  totalADABull: number
+  totalADABear: number
   totalBetsClaimed: number
-  totalBNBClaimed: number
+  totalADAClaimed: number
   winRate: number
-  averageBNB: number
-  netBNB: number
+  averageADA: number
+  netADA: number
   bets?: Bet[]
 }
 

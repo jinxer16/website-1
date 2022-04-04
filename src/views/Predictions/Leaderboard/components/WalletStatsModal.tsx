@@ -98,9 +98,9 @@ const WalletStatsModal: React.FC<WalletStatsModalProps> = ({ account, onDismiss,
                 <Skeleton />
               ) : (
                 <NetWinnings
-                  amount={result?.netBNB}
-                  textPrefix={result?.netBNB > 0 ? '+' : ''}
-                  textColor={result?.netBNB > 0 ? 'success' : 'failure'}
+                  amount={result?.netADA}
+                  textPrefix={result?.netADA > 0 ? '+' : ''}
+                  textColor={result?.netADA > 0 ? 'success' : 'failure'}
                   alignItems="flex-end"
                 />
               )}

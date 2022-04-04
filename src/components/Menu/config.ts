@@ -84,7 +84,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   //   href: 'https://ipfs.io/ipfs/QmThQBvQeekRhL73pZPRFb5iLbong7PvuQG9LP29TsZJYh',
   // },
   // {
-  //   label: t('BNB stake'),
+  //   label: t('ADA stake'),
   //   icon: 'StakeIcon',
   //   href: 'https://bnbstake.bashprotocol.com/',
   //   // status: menuStatus.SOON

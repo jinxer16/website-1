@@ -6,14 +6,14 @@ export interface UserResponse {
   totalBets: string
   totalBetsBull: string
   totalBetsBear: string
-  totalBNB: string
-  totalBNBBull: string
-  totalBNBBear: string
+  totalADA: string
+  totalADABull: string
+  totalADABear: string
   totalBetsClaimed: string
-  totalBNBClaimed: string
+  totalADAClaimed: string
   winRate: string
-  averageBNB: string
-  netBNB: string
+  averageADA: string
+  netADA: string
   bets?: BetResponse[]
 }
 
@@ -26,8 +26,8 @@ export interface BetResponse {
   claimedAt: string
   claimedBlock: string
   claimedHash: string
-  claimedBNB: string
-  claimedNetBNB: string
+  claimedADA: string
+  claimedNetADA: string
   createdAt: string
   updatedAt: string
   block: string
@@ -76,8 +76,8 @@ export interface RoundResponse {
 }
 
 export interface TotalWonMarketResponse {
-  totalBNB: string
-  totalBNBTreasury: string
+  totalADA: string
+  totalADATreasury: string
 }
 
 /**
@@ -118,8 +118,8 @@ export const getBetBaseFields = () => `
  claimedAt
  claimedHash
  claimedBlock
- claimedBNB
- claimedNetBNB
+ claimedADA
+ claimedNetADA
  createdAt
  updatedAt
 `
@@ -132,12 +132,12 @@ export const getUserBaseFields = () => `
   totalBets
   totalBetsBull
   totalBetsBear
-  totalBNB
-  totalBNBBull
-  totalBNBBear
+  totalADA
+  totalADABull
+  totalADABear
   totalBetsClaimed
-  totalBNBClaimed
+  totalADAClaimed
   winRate
-  averageBNB
-  netBNB
+  averageADA
+  netADA
 `

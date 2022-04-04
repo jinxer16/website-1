@@ -5,7 +5,7 @@ import tokens from 'config/constants/tokens'
 import { Token } from 'config/constants/types'
 import multicall from 'utils/multicall'
 
-// remove BNB because it's not a Bep20 token
+// remove ADA because it's not a Bep20 token
 // remove ONE because there are two tokens with the symbol ONE (Harmony ONE and BigONE)
 const tokensToTest = omitBy(
   tokens,

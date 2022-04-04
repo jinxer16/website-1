@@ -1,7 +1,7 @@
 import React from 'react'
 import { Flex, FlexProps, Text } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
-import { useBNBBusdPrice } from 'hooks/useBUSDPrice'
+import { useADABusdPrice } from 'hooks/useBUSDPrice'
 import { multiplyPriceByAmount } from 'utils/prices'
 
 export const Row: React.FC<FlexProps> = ({ children, ...props }) => {
@@ -19,7 +19,7 @@ interface NetWinningsProps extends FlexProps {
 }
 
 export const NetWinnings: React.FC<NetWinningsProps> = ({ amount, textPrefix = '', textColor = 'text', ...props }) => {
-  const bnbBusdPrice = useBNBBusdPrice()
+  const bnbBusdPrice = useADABusdPrice()
   const value = multiplyPriceByAmount(bnbBusdPrice, Math.abs(amount))
 
   if (!amount) {
@@ -44,7 +44,7 @@ export const NetWinningsRow: React.FC<{ amount: number }> = ({ amount }) => {
   return (
     <Row mb="4px">
       <Text fontSize="12px" color="textSubtle">
-        {t('Net Winnings (BNB)')}
+        {t('Net Winnings (ADA)')}
       </Text>
       <NetWinnings amount={amount} textPrefix={amount > 0 ? '+' : ''} textColor={amount > 0 ? 'success' : 'failure'} />
     </Row>

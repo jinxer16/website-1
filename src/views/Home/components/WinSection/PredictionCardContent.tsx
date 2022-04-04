@@ -6,7 +6,7 @@ import { formatLocalisedCompactNumber } from 'utils/formatBalance'
 import useRefresh from 'hooks/useRefresh'
 import useIntersectionObserver from 'hooks/useIntersectionObserver'
 import { getTotalWon } from 'state/predictions/helpers'
-import { useBNBBusdPrice } from 'hooks/useBUSDPrice'
+import { useADABusdPrice } from 'hooks/useBUSDPrice'
 import { multiplyPriceByAmount } from 'utils/prices'
 
 const StyledLink = styled(Link)`
@@ -18,12 +18,12 @@ const PredictionCardContent = () => {
   const { slowRefresh } = useRefresh()
   const { observerRef, isIntersecting } = useIntersectionObserver()
   const [loadData, setLoadData] = useState(false)
-  const bnbBusdPrice = useBNBBusdPrice()
+  const bnbBusdPrice = useADABusdPrice()
   const [bnbWon, setBnbWon] = useState(0)
   const bnbWonInUsd = multiplyPriceByAmount(bnbBusdPrice, bnbWon)
 
   const localisedBnbUsdString = formatLocalisedCompactNumber(bnbWonInUsd)
-  const bnbWonText = t('$%bnbWonInUsd% in BNB won so far', { bnbWonInUsd: localisedBnbUsdString })
+  const bnbWonText = t('$%bnbWonInUsd% in ADA won so far', { bnbWonInUsd: localisedBnbUsdString })
   const [pretext, wonSoFar] = bnbWonText.split(localisedBnbUsdString)
 
   useEffect(() => {
@@ -65,7 +65,7 @@ const PredictionCardContent = () => {
           {wonSoFar}
         </Text>
         <Text color="#0069ab" mb="40px">
-          {t('Will BNB price rise or fall? guess correctly to win!')}
+          {t('Will ADA price rise or fall? guess correctly to win!')}
         </Text>
       </Flex>
       <Flex alignItems="center" justifyContent="center">

@@ -1,5 +1,5 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '@pancakeswap/sdk'
-import { BUSD, DAI, USDT, BTCB, CAKE, WBNB, UST, ETH, USDC } from './tokens'
+import { BUSD, DAI, USDT, BTCB, CAKE, WADA, UST, ETH, USDC } from './tokens'
 
 export const ROUTER_ADDRESS = '0xb429126807fEE4b8B1d769f97D6634fdEC9fFc99'
 
@@ -47,7 +47,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
-    [CAKE[ChainId.MAINNET], WBNB],
+    [CAKE[ChainId.MAINNET], WADA],
     [BUSD[ChainId.MAINNET], USDT],
     [DAI, USDT],
   ],
@@ -74,8 +74,8 @@ export const PRICE_IMPACT_WITHOUT_FEE_CONFIRM_MIN: Percent = new Percent(JSBI.Bi
 // for non expert mode disable swaps above this
 export const BLOCKED_PRICE_IMPACT_NON_EXPERT: Percent = new Percent(JSBI.BigInt(1500), BIPS_BASE) // 15%
 
-// used to ensure the user doesn't send so much BNB so they end up with <.01
-export const MIN_BNB: JSBI = JSBI.exponentiate(JSBI.BigInt(10), JSBI.BigInt(16)) // .01 BNB
+// used to ensure the user doesn't send so much ADA so they end up with <.01
+export const MIN_ADA: JSBI = JSBI.exponentiate(JSBI.BigInt(10), JSBI.BigInt(16)) // .01 ADA
 export const BETTER_TRADE_LESS_HOPS_THRESHOLD = new Percent(JSBI.BigInt(50), JSBI.BigInt(10000))
 
 export const ZERO_PERCENT = new Percent('0')

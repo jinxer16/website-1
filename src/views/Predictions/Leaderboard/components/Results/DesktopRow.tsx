@@ -23,9 +23,9 @@ const DesktopRow: React.FC<DesktopRowProps> = ({ rank, user, ...props }) => (
     </Td>
     <Td>
       <NetWinnings
-        amount={user.netBNB}
-        textPrefix={user.netBNB > 0 ? '+' : ''}
-        textColor={user.netBNB > 0 ? 'success' : 'failure'}
+        amount={user.netADA}
+        textPrefix={user.netADA > 0 ? '+' : ''}
+        textColor={user.netADA > 0 ? 'success' : 'failure'}
       />
     </Td>
     <Td textAlign="center">

@@ -45,7 +45,7 @@ const PreviousBetsTable: React.FC<PreviousBetsTableProps> = ({ numberOfBets = 5,
         <tr>
           <Th>{t('Round')}</Th>
           <Th>{t('Direction')}</Th>
-          <Th textAlign="right">{t('Winnings (BNB)')}</Th>
+          <Th textAlign="right">{t('Winnings (ADA)')}</Th>
         </tr>
       </thead>
       <tbody>
@@ -76,7 +76,7 @@ const PreviousBetsTable: React.FC<PreviousBetsTableProps> = ({ numberOfBets = 5,
                   </Td>
                   <Td textAlign="right">
                     <NetWinnings
-                      amount={isWinner ? bet.claimedNetBNB : bet.amount}
+                      amount={isWinner ? bet.claimedNetADA : bet.amount}
                       textPrefix={isWinner ? '+' : '-'}
                       textColor={isWinner ? 'success' : 'failure'}
                     />

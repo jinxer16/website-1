@@ -33,7 +33,7 @@ const ContributeButton: React.FC<Props> = ({ poolId, ifo, publicIfoData, walletI
     toastSuccess(
       t('Success!'),
       <ToastDescriptionWithTx txHash={txHash}>
-        {t('You have contributed %amount% BPT-BNB LP tokens to this LAUNCHPAD!', {
+        {t('You have contributed %amount% BPT-ADA LP tokens to this LAUNCHPAD!', {
           amount: getBalanceNumber(amount),
         })}
       </ToastDescriptionWithTx>,

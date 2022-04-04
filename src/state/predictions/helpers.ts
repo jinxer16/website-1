@@ -73,8 +73,8 @@ export const transformBetResponse = (betResponse: BetResponse): Bet => {
     claimedAt: numberOrNull(betResponse.claimedAt),
     claimedBlock: numberOrNull(betResponse.claimedBlock),
     claimedHash: betResponse.claimedHash,
-    claimedBNB: betResponse.claimedBNB ? parseFloat(betResponse.claimedBNB) : 0,
-    claimedNetBNB: betResponse.claimedNetBNB ? parseFloat(betResponse.claimedNetBNB) : 0,
+    claimedADA: betResponse.claimedADA ? parseFloat(betResponse.claimedADA) : 0,
+    claimedNetADA: betResponse.claimedNetADA ? parseFloat(betResponse.claimedNetADA) : 0,
     createdAt: numberOrNull(betResponse.createdAt),
     updatedAt: numberOrNull(betResponse.updatedAt),
   } as Bet
@@ -99,14 +99,14 @@ export const transformUserResponse = (userResponse: UserResponse): PredictionUse
     totalBets,
     totalBetsBull,
     totalBetsBear,
-    totalBNB,
-    totalBNBBull,
-    totalBNBBear,
+    totalADA,
+    totalADABull,
+    totalADABear,
     totalBetsClaimed,
-    totalBNBClaimed,
+    totalADAClaimed,
     winRate,
-    averageBNB,
-    netBNB,
+    averageADA,
+    netADA,
   } = userResponse
 
   return {
@@ -117,14 +117,14 @@ export const transformUserResponse = (userResponse: UserResponse): PredictionUse
     totalBets: numberOrNull(totalBets),
     totalBetsBull: numberOrNull(totalBetsBull),
     totalBetsBear: numberOrNull(totalBetsBear),
-    totalBNB: totalBNB ? parseFloat(totalBNB) : 0,
-    totalBNBBull: totalBNBBull ? parseFloat(totalBNBBull) : 0,
-    totalBNBBear: totalBNBBear ? parseFloat(totalBNBBear) : 0,
+    totalADA: totalADA ? parseFloat(totalADA) : 0,
+    totalADABull: totalADABull ? parseFloat(totalADABull) : 0,
+    totalADABear: totalADABear ? parseFloat(totalADABear) : 0,
     totalBetsClaimed: numberOrNull(totalBetsClaimed),
-    totalBNBClaimed: totalBNBClaimed ? parseFloat(totalBNBClaimed) : 0,
+    totalADAClaimed: totalADAClaimed ? parseFloat(totalADAClaimed) : 0,
     winRate: winRate ? parseFloat(winRate) : 0,
-    averageBNB: averageBNB ? parseFloat(averageBNB) : 0,
-    netBNB: netBNB ? parseFloat(netBNB) : 0,
+    averageADA: averageADA ? parseFloat(averageADA) : 0,
+    netADA: netADA ? parseFloat(netADA) : 0,
   }
 }
 
@@ -218,17 +218,17 @@ export const getTotalWon = async (): Promise<number> => {
     gql`
       query getTotalWonData {
         market(id: 1) {
-          totalBNB
-          totalBNBTreasury
+          totalADA
+          totalADATreasury
         }
       }
     `,
   )) as { market: TotalWonMarketResponse }
 
-  const totalBNB = market.totalBNB ? parseFloat(market.totalBNB) : 0
-  const totalBNBTreasury = market.totalBNBTreasury ? parseFloat(market.totalBNBTreasury) : 0
+  const totalADA = market.totalADA ? parseFloat(market.totalADA) : 0
+  const totalADATreasury = market.totalADATreasury ? parseFloat(market.totalADATreasury) : 0
 
-  return Math.max(totalBNB - totalBNBTreasury, 0)
+  return Math.max(totalADA - totalADATreasury, 0)
 }
 
 type WhereClause = Record<string, string | number | boolean | string[]>

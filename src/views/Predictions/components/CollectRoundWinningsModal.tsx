@@ -22,7 +22,7 @@ import { REWARD_RATE } from 'state/predictions/config'
 import { fetchNodeHistory, markAsCollected } from 'state/predictions'
 import { Bet } from 'state/types'
 import { useTranslation } from 'contexts/Localization'
-import { useBNBBusdPrice } from 'hooks/useBUSDPrice'
+import { useADABusdPrice } from 'hooks/useBUSDPrice'
 import useToast from 'hooks/useToast'
 import { usePredictionsContract } from 'hooks/useContract'
 import { useCallWithGasPrice } from 'hooks/useCallWithGasPrice'
@@ -82,7 +82,7 @@ const CollectRoundWinningsModal: React.FC<CollectRoundWinningsModalProps> = ({ o
   const { toastSuccess, toastError } = useToast()
   const { callWithGasPrice } = useCallWithGasPrice()
   const predictionsContract = usePredictionsContract()
-  const bnbBusdPrice = useBNBBusdPrice()
+  const bnbBusdPrice = useADABusdPrice()
   const dispatch = useAppDispatch()
   const isLoadingHistory = useGetIsFetchingHistory()
   const history = useGetHistory()
@@ -151,7 +151,7 @@ const CollectRoundWinningsModal: React.FC<CollectRoundWinningsModalProps> = ({ o
         <Flex alignItems="start" justifyContent="space-between" mb="8px">
           <Text>{t('Collecting')}</Text>
           <Box style={{ textAlign: 'right' }}>
-            <Text>{`${formatNumber(totalBnb, 0, 4)} BNB`}</Text>
+            <Text>{`${formatNumber(totalBnb, 0, 4)} ADA`}</Text>
             <Text fontSize="12px" color="textSubtle">
               {`~$${totalBnb.toFixed(2)}`}
             </Text>

@@ -27,7 +27,7 @@ interface WalletModalProps extends InjectedModalProps {
   initialView?: WalletView
 }
 
-export const LOW_BNB_BALANCE = new BigNumber('2000000000') // 2 Gwei
+export const LOW_ADA_BALANCE = new BigNumber('2000000000') // 2 Gwei
 
 const ModalHeader = styled(UIKitModalHeader)`
   background: ${({ theme }) => theme.colors.gradients.bubblegum};
@@ -43,7 +43,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ initialView = WalletView.WALL
   const [view, setView] = useState(initialView)
   const { t } = useTranslation()
   const { balance, fetchStatus } = useGetBnbBalance()
-  const hasLowBnbBalance = fetchStatus === FetchStatus.SUCCESS && balance.lte(LOW_BNB_BALANCE)
+  const hasLowBnbBalance = fetchStatus === FetchStatus.SUCCESS && balance.lte(LOW_ADA_BALANCE)
 
   const handleClick = (newIndex: number) => {
     setView(newIndex)

@@ -51,7 +51,7 @@ export const BUSD: { [chainId: number]: Token } = {
   ),
 }
 
-export const WBNB = new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB')
+export const WADA = new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WADA', 'Wrapped ADA')
 export const DAI = new Token(ChainId.MAINNET, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'Dai Stablecoin')
 export const USDT = new Token(ChainId.MAINNET, '0x55d398326f99059fF775485246999027B3197955', 18, 'USDT', 'Tether USD')
 export const BTCB = new Token(ChainId.MAINNET, '0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c', 18, 'BTCB', 'Binance BTC')
@@ -79,7 +79,7 @@ export const USDC = new Token(
 
 const tokens = {
   bnb: {
-    symbol: 'BNB',
+    symbol: 'ADA',
     projectLink: 'https://www.binance.com/',
   },
   // chy: {
@@ -104,7 +104,7 @@ const tokens = {
     symbol: 'PINE',
     address: {
       56: '0x17e82d8004590A927204A0729f1AA010Fa889989', /* 0x504BA9B11c727688cCca62BAE112C2c62085129E */
-      200101: '0x15cA3A5D8635D2Dd48aaFA0B45E585eA559a8396'
+      200101: '0x9F6D4aAbAfDcf7d3a63BC61b2d7be9E3EED6e916'
     },
     decimals: 18,
     projectLink: 'http://bashprotocol.com/',
@@ -758,7 +758,7 @@ const tokens = {
     projectLink: 'https://venus.io/',
   },
   wbnb: {
-    symbol: 'wBNB',
+    symbol: 'wADA',
     address: {
       56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
       200101: '0x65a51E52eCD17B641f8F0D1d56a6c9738951FDC9',

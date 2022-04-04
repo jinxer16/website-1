@@ -21,12 +21,12 @@ const GetLpModal: React.FC<Partial<Props>> = ({ currency, onDismiss }) => {
           margin="auto"
           mb="24px"
         />
-        <Text mb="16px">{t('You’ll need BPT-BNB LP tokens to participate in the LAUNCHPAD!')}</Text>
+        <Text mb="16px">{t('You’ll need BPT-ADA LP tokens to participate in the LAUNCHPAD!')}</Text>
         <Text mb="24px">{t('Get LP tokens, or make sure your tokens aren’t staked somewhere else.')}</Text>
         <Button
           as={Link}
           external
-          href={`${BASE_ADD_LIQUIDITY_URL}/BNB/0x4b2BE03d1D59e1D7fEf4Dd22E364f1A00BC18299`}
+          href={`${BASE_ADD_LIQUIDITY_URL}/ADA/0x4b2BE03d1D59e1D7fEf4Dd22E364f1A00BC18299`}
           endIcon={<OpenNewIcon color="white" />}
           minWidth="100%" // Bypass the width="fit-content" on Links
         >

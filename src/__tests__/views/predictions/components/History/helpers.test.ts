@@ -22,11 +22,11 @@ describe('formatBnb', () => {
     [265.22, '265.220'],
     [689.889, '689.889'],
     [10.8829, '10.883'],
-  ])('format %i BNB correctly with 3 decimals', (value, expected) => {
+  ])('format %i ADA correctly with 3 decimals', (value, expected) => {
     expect(formatBnb(value)).toEqual(expected)
   })
 
-  it('returns 0 if BNB is undefined', () => {
+  it('returns 0 if ADA is undefined', () => {
     expect(formatBnb(undefined)).toEqual('0')
   })
 })
@@ -56,7 +56,7 @@ describe('getPayout', () => {
       address: 'bet1address',
       block: 1000,
       totalBets: 0,
-      totalBNB: 0,
+      totalADA: 0,
     },
     round: {
       id: 'round',
@@ -92,7 +92,7 @@ describe('getPayout', () => {
       address: 'bet1address',
       block: 1000,
       totalBets: 0,
-      totalBNB: 0,
+      totalADA: 0,
     },
     round: {
       id: 'round',
@@ -127,7 +127,7 @@ describe('getPayout', () => {
       address: 'bet2address',
       block: 1000,
       totalBets: 0,
-      totalBNB: 0,
+      totalADA: 0,
     },
     round: {
       id: 'round',
@@ -162,7 +162,7 @@ describe('getPayout', () => {
       address: 'bet2address',
       block: 1000,
       totalBets: 0,
-      totalBNB: 0,
+      totalADA: 0,
     },
     round: {
       id: 'round',

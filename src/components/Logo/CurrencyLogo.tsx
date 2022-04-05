@@ -1,4 +1,5 @@
-import { Currency, ETHER, Token } from '@pancakeswap/sdk'
+import { Currency, Token } from '@pancakeswap/sdk'
+import { ETHER } from 'components/SearchModal/ETHER'
 import { BinanceIcon } from '@pancakeswap/uikit'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'

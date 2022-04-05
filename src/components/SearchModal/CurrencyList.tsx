@@ -19,7 +19,7 @@ import { isTokenOnList } from '../../utils'
 import ImportRow from './ImportRow'
 
 function currencyKey(currency: Currency): string {
-  return currency instanceof Token ? currency.address : currency === ETHER ? 'ETHER' : ''
+  return currency instanceof Token ? currency.address : currency === ETHER ? 'ADA' : ''
 }
 
 const StyledBalanceText = styled(Text)`
@@ -122,7 +122,7 @@ export default function CurrencyList({
   breakIndex: number | undefined
 }) {
   const itemData: (Currency | undefined)[] = useMemo(() => {
-    let formatted: (Currency | undefined)[] = showETH ? [currencies[0], ...currencies] : currencies
+    let formatted: (Currency | undefined)[] = showETH ? [Currency.ETHER, ...currencies] : currencies
     if (breakIndex !== undefined) {
       formatted = [...formatted.slice(0, breakIndex), undefined, ...formatted.slice(breakIndex, formatted.length)]
     }

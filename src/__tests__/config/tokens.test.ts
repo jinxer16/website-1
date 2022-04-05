@@ -9,7 +9,7 @@ import multicall from 'utils/multicall'
 // remove ONE because there are two tokens with the symbol ONE (Harmony ONE and BigONE)
 const tokensToTest = omitBy(
   tokens,
-  (token) => token.symbol.toLowerCase() === 'bnb' || token.symbol.toLowerCase() === 'one',
+  (token) => token.symbol.toLowerCase() === 'ada' || token.symbol.toLowerCase() === 'one',
 )
 
 describe('Config tokens', () => {

@@ -17,7 +17,7 @@ const farms: FarmConfig[] = [
     pid: 1,
     lpSymbol: 'PINE-ADA LP',
     lpAddresses: {
-      200101: '0x48f00ec3ec5ad370de07480879ae5d3ab7fa3ebf',
+      200101: '0xaAC5BB0f4749D8D317f016327f94107D17870f1b',
       56: '',
     },
     token: tokens.pine,

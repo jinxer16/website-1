@@ -1,8 +1,8 @@
 export default {
   masterChef: {
-    200101: '0x8dC0609E7F3eCc9b521eFF159CE5BC0D3ef67bf4',
+    200101: '0x0F5Fde55B35c3680B419bFb74FE78e1B6C856dc4',
     // 56: '0x44C7499Fec2CBA7Ff3123762ae31c002257826c5', // dev version
-    56: '0xf936a276F33F9Ad05E0c2e322178772E9cA0b225',   // production version
+    56: '0x0F5Fde55B35c3680B419bFb74FE78e1B6C856dc4',   // production version
   },
   sousChef: {
     200101: '',

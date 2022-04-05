@@ -38,7 +38,7 @@ export default function CurrencyLogo({
   }, [currency, uriLocations])
 
   if (currency === ETHER) {
-    return <StyledLogo srcs={['/images/tokens/ada.png']} size={size} style={style} alt={'ADA token logo'}/>
+    return <StyledLogo srcs={['/images/tokens/ada.png']} size={size} style={style} alt='ADA token logo'/>
   }
 
   // if (currency?.symbol === 'CHY') {

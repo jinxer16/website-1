@@ -8,7 +8,7 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpAddresses: {
       200101: '0x9F6D4aAbAfDcf7d3a63BC61b2d7be9E3EED6e916',
-      56: '0x3fba787e48a1f4c2a1ec04702aa3fe2162704e67', /* 0x3e76bd1edb5f6d981dd14d9d2ab711f0c2a0a6a0 */
+      56: '0x9F6D4aAbAfDcf7d3a63BC61b2d7be9E3EED6e916', /* 0x3e76bd1edb5f6d981dd14d9d2ab711f0c2a0a6a0 */
     },
     token: tokens.pine,
     quoteToken: tokens.busd,
@@ -18,7 +18,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'PINE-ADA LP',
     lpAddresses: {
       200101: '0xaAC5BB0f4749D8D317f016327f94107D17870f1b',
-      56: '',
+      56: '0xaAC5BB0f4749D8D317f016327f94107D17870f1b',
     },
     token: tokens.pine,
     quoteToken: tokens.wbnb,

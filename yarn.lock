@@ -2593,7 +2593,7 @@
 
 "@pancakeswap/sdk@raxioma/pine-sdk":
   version "2.3.2"
-  resolved "https://codeload.github.com/raxioma/pine-sdk/tar.gz/78a5f7143e69be58ffb302fdc0ce2f2fcddeb815"
+  resolved "https://codeload.github.com/raxioma/dexy-avax-sdk/tar.gz/78a5f7143e69be58ffb302fdc0ce2f2fcddeb815"
   dependencies:
     "@pancakeswap-libs/pancake-swap-core" "^0.1.0"
     big.js "^5.2.2"

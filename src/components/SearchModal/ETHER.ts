@@ -10,7 +10,9 @@ import { validateSolidityTypeInstance } from './utils'
  */
 export class Currency {
   public readonly decimals: number
+
   public readonly symbol?: string
+  
   public readonly name?: string
 
   /**

@@ -54,15 +54,16 @@ export function sortedInsert<T>(items: T[], add: T, maxSize: number, comparator:
   if (items.length === 0) {
     items.push(add)
     return null
-  } else {
+  } 
+  else {
     const isFull = items.length === maxSize
     // short circuit if full and the additional item does not come before the last item
     if (isFull && comparator(items[items.length - 1], add) <= 0) {
       return add
     }
 
-    let lo = 0,
-      hi = items.length
+    let lo = 0
+    let hi = items.length
 
     while (lo < hi) {
       const mid = (lo + hi) >>> 1

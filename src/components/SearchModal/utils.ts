@@ -11,7 +11,7 @@ export function validateSolidityTypeInstance(value: JSBI, solidityType: Solidity
 }
 
 // warns if addresses are not checksummed
-export function validateAndParseAddress(address: string): string {
+export function validateAndParseAddress(address: string): string { // eslint-disable-line consistent-return
   try {
     const checksummedAddress = getAddress(address)
     warning(address === checksummedAddress, `${address} is not checksummed.`)
@@ -55,7 +55,7 @@ export function sortedInsert<T>(items: T[], add: T, maxSize: number, comparator:
     items.push(add)
     return null
   } 
-  else {
+  else { // eslint-disable-line no-else-return
     const isFull = items.length === maxSize
     // short circuit if full and the additional item does not come before the last item
     if (isFull && comparator(items[items.length - 1], add) <= 0) {
@@ -67,7 +67,7 @@ export function sortedInsert<T>(items: T[], add: T, maxSize: number, comparator:
     
 
     while (lo < hi) {
-      const mid = (lo + hi) >>> 1 //eslint-disable-line no-bitwise
+      const mid = (lo + hi) >>> 1 // eslint-disable-line no-bitwise
       if (comparator(items[mid], add) <= 0) {
         lo = mid + 1
       } else {

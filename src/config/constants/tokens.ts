@@ -1022,15 +1022,6 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://www.makerdao.com/',
   },
-  ada: {
-    symbol: 'ADA',
-    address: {
-      56: '0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47',
-      200101: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5',
-    },
-    decimals: 18,
-    projectLink: 'https://www.cardano.org/',
-  },
   band: {
     symbol: 'BAND',
     address: {

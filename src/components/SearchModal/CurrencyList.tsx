@@ -20,7 +20,7 @@ import { isTokenOnList } from '../../utils'
 import ImportRow from './ImportRow'
 
 function currencyKey(currency: Currency): string {
-  return currency instanceof Token ? currency.address : currency === ETHER ? 'ADA' : ''
+  return currency instanceof Token ? currency.address : currency === ETHER ? 'ada' : ''
 }
 
 const StyledBalanceText = styled(Text)`

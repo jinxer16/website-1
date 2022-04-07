@@ -48,7 +48,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'WADA',
     isTokenOnly: true,
     lpAddresses: {
-      200101: '0xa021a60250a7d5af3941542927a154bafdde2393',
+      200101: '0x65a51E52eCD17B641f8F0D1d56a6c9738951FDC9',
       56: '0x152E2D46798f2827d46F2DAd098bf7Cd8B985538', /* 0x152E2D46798f2827d46F2DAd098bf7Cd8B985538 */
     },
     token: tokens.wbnb,

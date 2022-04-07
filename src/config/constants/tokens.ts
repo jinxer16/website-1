@@ -80,7 +80,11 @@ export const USDC = new Token(
 const tokens = {
   bnb: {
     symbol: 'ADA',
-    projectLink: 'https://www.binance.com/',
+    projectLink: 'https://cardano.org/',
+  },
+  ada: {
+    symbol: 'ADA',
+    projectLink: 'https://cardano.org/',
   },
   // chy: {
   //   symbol: 'CHY',

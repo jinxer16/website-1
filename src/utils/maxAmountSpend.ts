@@ -1,5 +1,6 @@
-import { CurrencyAmount, ETHER, JSBI } from '@pancakeswap/sdk'
+import { CurrencyAmount, JSBI } from '@pancakeswap/sdk'
 import { MIN_ADA } from '../config/constants'
+import { ETHER } from 'components/SearchModal/ETHER'
 
 /**
  * Given some token amount, return the max that can be spent of it

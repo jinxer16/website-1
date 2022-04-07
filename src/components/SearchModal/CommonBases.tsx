@@ -1,7 +1,8 @@
 import React from 'react'
-import { ChainId, Currency, currencyEquals, ETHER, Token } from '@pancakeswap/sdk'
+import { ChainId, Currency, currencyEquals, Token } from '@pancakeswap/sdk'
 import { Text } from '@pancakeswap/uikit'
 import styled from 'styled-components'
+import { ETHER } from './ETHER'
 import { useTranslation } from 'contexts/Localization'
 
 import { SUGGESTED_BASES } from '../../config/constants'
